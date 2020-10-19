@@ -19,3 +19,9 @@ endfunction(add_ub_example)
 add_ub_example(int_max)
 add_ub_example(array)
 add_ub_example(alias)
+
+add_c_program(ipd11a-1 exercise/ipd11a-1.c)
+target_compile_options(ipd11a-1 PRIVATE -O0)
+
+add_c_program(ipd11a-1.opt exercise/ipd11a-1.c)
+target_compile_options(ipd11a-1 PRIVATE -O2)
